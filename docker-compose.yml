@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  oracle19c:
+    image: container-registry.oracle.com/database/enterprise:19.3.0.0
+    container_name: oracle19c
+    ports:
+      - "1521:1521"
+      - "5500:5500"
+    environment:
+      ORACLE_PWD: cdcdcd001!
+    volumes:
+      - ./init.sql:/opt/oracle/scripts/setup/init.sql:ro
+    restart: always
