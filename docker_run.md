@@ -15,7 +15,7 @@ soromiso/mariadb                                 latest      89ac8acafb15   2 mo
 container-registry.oracle.com/database/express   21.3.0-xe   dcf137aab02d   20 months ago   15.2GB
 
 ## rename the image name with oracle-xe
-$ docker tag container-registry.oracle.com/database/express:21.3.0-xe:21.3.0-xe oracle-xe
+$ docker tag container-registry.oracle.com/database/express:21.3.0-xe oracle-xe
 
 ## list all images on my local docker desktop
 $ docker images
